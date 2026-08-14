@@ -39,8 +39,8 @@ jobs:
         run: npm run build
         working-directory: packages/ts-bindings
 
-      - name: Publish to npm with Provenance
-        run: npm publish --provenance --access public
+      - name: Publish to npm
+        run: npm publish --access public
         working-directory: packages/ts-bindings
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
