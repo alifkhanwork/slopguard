@@ -1,0 +1,42 @@
+{
+  "name": "@svgph/slopguard",
+  "version": "0.1.0",
+  "description": "TypeScript bindings and agent-permit integration for SlopGuard slopsquatting defence",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./integrations/agent-permit": {
+      "types": "./dist/agent_permit.d.ts",
+      "import": "./dist/agent_permit.mjs",
+      "require": "./dist/agent_permit.js"
+    }
+  },
+  "bin": {
+    "slopguard": "bin/slopguard.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "slopguard",
+    "slopsquatting",
+    "security",
+    "ai-agent",
+    "agent-permit"
+  ],
+  "author": "SVG Security",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
