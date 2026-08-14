@@ -1,7 +1,7 @@
 {
   "name": "@siliconvalleyglobal/slopguard",
-  "version": "0.1.0",
-  "description": "TypeScript bindings and agent-permit integration for SlopGuard slopsquatting defence",
+  "version": "0.1.1",
+  "description": "Real-time AI package hallucination and slopsquatting defense for AI coding agents",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
