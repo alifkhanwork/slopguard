@@ -5,7 +5,7 @@ A Project by [**SILICON VALLEY GLOBAL PH INC**](https://svg.ph/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Core](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://pypi.org/project/slopguard/)
-[![npm package](https://img.shields.io/badge/npm-%40svgph%2Fslopguard-red.svg)](https://www.npmjs.com/package/@svgph/slopguard)
+[![npm package](https://img.shields.io/badge/npm-%40siliconvalleyglobal%2Fslopguard-red.svg)](https://www.npmjs.com/package/@siliconvalleyglobal/slopguard)
 
 **SlopGuard** is a production-grade, install-time verification layer built to stop **slopsquatting** — a novel supply-chain attack vector where malicious actors register the exact hallucinated package names that AI coding agents (such as LLM pair programmers) tend to invent, then wait for agents or developers to install them automatically.
 
@@ -47,7 +47,7 @@ AI coding assistants (such as Claude, ChatGPT, Copilot, or local LLM agents) fre
 - Integrates with an actively maintained malicious-package database (OpenSSF Malicious Packages DB via the OSV API at `api.osv.dev`) rather than maintaining a fragile proprietary feed.
 - Local caching (`~/.slopguard/intel_cache.json`) with graceful offline fallback to local heuristic detectors when network is unavailable.
 
-### 5. Agent Tooling Integration (`slopguard/integrations/agent_permit.ts` / `@svgph/slopguard`)
+### 5. Agent Tooling Integration (`slopguard/integrations/agent_permit.ts` / `@siliconvalleyglobal/slopguard`)
 - Plugs directly into `agent-permit` as an inline pre-approval check (`checkPackage()`), so any connected agent tool gets slopsquatting protection automatically with zero extra setup.
 
 ---
@@ -77,7 +77,7 @@ pip install slopguard
 
 #### TypeScript / Node.js Bindings
 ```bash
-npm install @svgph/slopguard
+npm install @siliconvalleyglobal/slopguard
 ```
 
 ---
@@ -132,7 +132,7 @@ SlopGuard can be configured per project via `.slopguard.json` in your repository
 Integrate SlopGuard into your agent pre-approval system or `agent-permit`:
 
 ```typescript
-import { checkPackage } from "@svgph/slopguard/integrations/agent-permit";
+import { checkPackage } from "@siliconvalleyglobal/slopguard/integrations/agent-permit";
 
 const result = await checkPackage("react-codeshift", "npm");
 

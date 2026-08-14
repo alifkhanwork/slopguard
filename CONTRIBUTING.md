@@ -23,7 +23,7 @@ slopguard/
 ├── config.py                  # Settings loader (.slopguard.json)
 └── cli.py                     # Click CLI entrypoints
 
-packages/ts-bindings/          # @svgph/slopguard TS bindings & agent_permit.ts
+packages/ts-bindings/          # @siliconvalleyglobal/slopguard TS bindings & agent_permit.ts
 ```
 
 ---
