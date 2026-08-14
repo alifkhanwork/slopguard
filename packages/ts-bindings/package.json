@@ -23,9 +23,31 @@
   "bin": {
     "slopguard": "bin/slopguard.js"
   },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsup",
-    "test": "vitest run"
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alifkhanwork/slopguard.git"
+  },
+  "homepage": "https://github.com/alifkhanwork/slopguard#readme",
+  "bugs": {
+    "url": "https://github.com/alifkhanwork/slopguard/issues"
   },
   "keywords": [
     "slopguard",
